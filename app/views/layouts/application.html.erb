@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Portfolio</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Portfolio</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'shared/navbar' %>
+    <div class="container">
+      <!-- Page Heading -->
+        <div class="col-lg-12">
+          <h1 class="page-header">Project Portfolio
+            <small>Snapshots of Progress</small>
+          </h1>
+        </div>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
+  </body>
 </html>
