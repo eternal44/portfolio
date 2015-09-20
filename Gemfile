@@ -16,6 +16,9 @@ gem 'responders', '~> 2.0'
 gem 'paperclip', '~> 4.3'
 gem 'devise', '~> 3.5.1'
 gem 'redcarpet'
+gem 'carrierwave',             '0.10.0'
+gem 'mini_magick',             '3.8.0'
+gem 'fog',                     '1.26.0'
 
 group :development, :test do
   gem 'byebug'
