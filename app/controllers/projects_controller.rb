@@ -7,10 +7,13 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    @project = Project.new
   end
 
   def create
-    @project = Post.new(post_params)
+    @project = Project.new(project_params)
+    @project.save
+    redirect_to projects_path
   end
 
   def edit
