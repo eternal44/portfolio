@@ -1,8 +1,8 @@
 <hr>
 <div class="row">
   <div class="col-md-7">
-    <a href="#">
-      <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+    <a href="http://<%= project.url %>">
+      <%= image_tag(project.picture.url, class: 'img-responsive') if project.picture? %>
     </a>
   </div>
   <div class="col-md-5">
