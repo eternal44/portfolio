@@ -34,7 +34,6 @@ class ProjectsController < ApplicationController
     end
 
     def project_params
-      # add photos later
-      params.require(:project).permit(:title, :subhead, :description, :url)
+      params.require(:project).permit(:title, :subhead, :description, :url, :picture)
     end
 end
